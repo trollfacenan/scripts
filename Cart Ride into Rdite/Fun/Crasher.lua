@@ -1,3 +1,4 @@
+-- this is not instant but whatever it still works
 if not fireclickdetector then warn("Unsupported executor.") return end
 pcall(function()
 	while task.wait(.5) do
