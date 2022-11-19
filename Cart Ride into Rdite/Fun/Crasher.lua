@@ -1,8 +1,9 @@
+if not fireclickdetector then warn("Unsupported executor.") return end
 pcall(function()
-	while wait(0.5) do
+	while task.wait(.5) do
 		pcall(function()
 			for i,v in pairs(workspace:GetDescendants()) do
-				spawn(function()
+				task.spawn(function()
 					if v:IsA("ClickDetector") then
 						fireclickdetector(v)
 					end
